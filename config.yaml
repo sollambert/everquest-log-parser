@@ -1,0 +1,15 @@
+paths:
+  - "/path/to/log/file.txt"
+tracked_files:
+  - "eqlog_CharacterName_ServerName.txt"
+rules:
+  spell_worn_off:
+    pattern: "spell has worn off of"
+    spell: "*"
+    target: "*"
+    text: "{spell} has worn off {target}"
+  spell_resisted:
+    pattern: "Your target resisted the"
+    spell: "*"
+    target: "*"
+    text: "{target} resisted your {spell}"
