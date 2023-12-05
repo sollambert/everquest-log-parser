@@ -5,11 +5,17 @@ tracked_files:
 rules:
   spell_worn_off:
     pattern: "spell has worn off of"
+    key: "Your {spell} spell has worn off of {target}."
     spell: "*"
+    ignored_spells: []
     target: "*"
+    ignored_targets: []
     text: "{spell} has worn off {target}"
   spell_resisted:
     pattern: "Your target resisted the"
+    key: "Your target resisted the {spell} spell."
     spell: "*"
+    ignored_spells: []
     target: "*"
-    text: "{target} resisted your {spell}"
+    ignored_targets: []
+    text: "Resisted {spell}"
